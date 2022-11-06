@@ -46,7 +46,7 @@ opt.splitbelow = true               -- bool: Place new window below the current 
 -- shortness: avoid showing extra messages when using completion
 -- updatetime: set updatetime for CursorHold
 vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
-vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.opt.shortmess = vim.opt.shortmess + { c = true }
 vim.api.nvim_set_option('updatetime', 300)
 
 -- Fixed column for diagnostics to appear

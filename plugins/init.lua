@@ -6,7 +6,7 @@ return {
             require "plugins.configs.lspconfig"
             require "custom.plugins.lspconfig"
         end,
-    }
+    },
 
     -- Override plugin configs
     ["nvim-treesitter/nvim-treesitter"] = {

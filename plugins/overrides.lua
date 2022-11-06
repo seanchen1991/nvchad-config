@@ -4,8 +4,6 @@ M.treesitter = {
     ensure_installed = {
         "vim",
         "lua",
-        "typescript",
-        "c",
         "rust",
         "toml",
     },

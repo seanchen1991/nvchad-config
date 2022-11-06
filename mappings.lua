@@ -15,14 +15,14 @@ M.tabufline = {
             function()
                 require("nvchad_ui.tabufline").tabuflineNext()
             end,
-            "Go to next buffer", 
+            "Go to next buffer",
         },
 
         ["<S-h>"] = {
             function()
                 require("nvchad_ui.tabufline").tabuflinePrev()
             end,
-            "Go to previous buffer", 
+            "Go to previous buffer",
         },
     }
 }
@@ -39,7 +39,7 @@ M.nvimtree = {
 M.telescope = {
     plugin = true,
 
-    n = { 
+    n = {
         ["<leader>pf"] = { "<cmd>Telescope find_files<cr>", "Telescope find file" },
         ["<leader>pw"] = { "<cmd>Telescope live_grep<cr>", "Telescope find word" },
         ["<leader>gd"] = { "<cmd>Telescope lsp_definitions<cr>", "Telescope goto definition" },
@@ -59,14 +59,14 @@ M.nvterm = {
             end,
             "Toggle floating terminal",
         },
-    
+
         ["<leader>th"] = {
             function()
                 require("nvterm.terminal").toggle "horizontal"
             end,
             "Toggle horizontal terminal",
         },
-    
+
         ["<leader>tv"] = {
             function()
                 require("nvterm.terminal").toggle "vertical"
@@ -83,14 +83,14 @@ M.nvterm = {
             end,
             "Toggle floating terminal",
         },
-    
+
         ["<leader>th"] = {
             function()
                 require("nvterm.terminal").toggle "horizontal"
             end,
             "Toggle horizontal terminal",
         },
-    
+
         ["<leader>tv"] = {
             function()
                 require("nvterm.terminal").toggle "vertical"

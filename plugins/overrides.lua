@@ -11,10 +11,10 @@ M.treesitter = {
 
 -- git support in nvimtree
 M.nvimtree = {
+    open_on_setup = true,
     git = {
         enable = true,
     },
-
     renderer = {
         highlight_git = true,
         icons = {

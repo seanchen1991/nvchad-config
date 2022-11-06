@@ -4,6 +4,7 @@ M.general = {
     n = {
         [";"] = { ":" , "command mode", opts = { nowait = true } },
         ["<leader>sl"] = { "<C-w><C-v>", "Split window to the right" },
+        ["<leader>qq"] = { "<cmd>qall<cr>", "Quit all loaded and open buffers, splits, and tabs" },
     },
 }
 
@@ -27,6 +28,16 @@ M.tabufline = {
     }
 }
 
+M.hop = {
+    plugin = true,
+
+    n = {
+        ["<leader>1"] = { "<cmd>HopChar1<cr>", "Hop to a single char sequence" },
+        ["<leader>2"] = { "<cmd>HopChar2<cr>", "Hop to a two-char sequence" },
+        ["<leader>3"] = { "<cmd>HopWord<cr>", "Hop to a word" },
+    }
+}
+
 M.nvimtree = {
     plugin = true,
 
@@ -45,6 +56,7 @@ M.telescope = {
         ["<leader>gd"] = { "<cmd>Telescope lsp_definitions<cr>", "Telescope goto definition" },
         ["<leader>gr"] = { "<cmd>Telescope lsp_references<cr>", "Telescope references" },
         ["<leader>pp"] = { "<cmd>Telescope projects<cr>", "Telescope projects" },
+        ["<leader>tv"] = { "<cmd>Telescope themes<cr>", "NvChad themes" },
     }
 }
 
@@ -66,13 +78,6 @@ M.nvterm = {
             end,
             "Toggle horizontal terminal",
         },
-
-        ["<leader>tv"] = {
-            function()
-                require("nvterm.terminal").toggle "vertical"
-            end,
-            "Toggle vertical terminal",
-        },
     },
 
     t = {
@@ -89,13 +94,6 @@ M.nvterm = {
                 require("nvterm.terminal").toggle "horizontal"
             end,
             "Toggle horizontal terminal",
-        },
-
-        ["<leader>tv"] = {
-            function()
-                require("nvterm.terminal").toggle "vertical"
-            end,
-            "Toggle vertical terminal",
         },
     },
 }

@@ -4,7 +4,7 @@ if not present then
   return
 end
 
-local function on_attach(client, buffer)
+local function on_attach(_, buffer)
   local keymap_opts = { buffer = buffer }
 
   -- Code actions
